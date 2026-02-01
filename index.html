@@ -4,35 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SinanTokmak Portfolio</title>
-    
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container nav-flex">
-            <div class="logo">
-                <span>&lt;C/&gt;</span> SinanTokmak
-            </div>
-            
+            <div class="logo"><span>&lt;C/&gt;</span> SinanTokmak</div>
             <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
                 <li><a href="#blogs">Blogs</a></li>
             </ul>
-
             <div class="search-wrapper">
                 <input type="text" placeholder="Search">
                 <i data-lucide="search"></i>
             </div>
-
             <div class="social-icons">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-discord"></i>
@@ -43,13 +38,10 @@
 
     <section id="home" class="hero-section">
         <div class="bg-text">DEVELOPER</div>
-
         <div class="container hero-container">
-            
             <div class="card-column">
                 <div class="profile-card">
                     <div class="card-glow"></div>
-                    
                     <div class="card-content">
                         <div class="profile-img-box">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=200" alt="Profile">
@@ -57,51 +49,29 @@
                         </div>
                         <h2>Sinan</h2>
                         <p class="subtitle">Full-stack Developer</p>
-
                         <div class="info-list">
                             <p><i data-lucide="mail"></i> sinan@example.com</p>
                             <p><i data-lucide="map-pin"></i> Turkey</p>
-                            <p><i data-lucide="briefcase"></i> Full Time / Freelance</p>
-                            <p><i data-lucide="link"></i> www.sinan.com</p>
+                            <p><i data-lucide="briefcase"></i> Available</p>
                         </div>
-
                         <div class="tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
+                            <span>HTML</span><span>CSS</span><span>JS</span>
                         </div>
-
-                        <button class="btn-outline">
-                            Download CV <i data-lucide="download"></i>
-                        </button>
+                        <button class="btn-outline">Download CV <i data-lucide="download"></i></button>
                     </div>
                 </div>
             </div>
-
             <div class="text-column">
                 <h1>Hey <br> I'm <span class="highlight">Sinan</span>,<br> Full-Stack Developer</h1>
-                <p class="description">
-                    I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done.
-                </p>
-                
+                <p class="description">I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done.</p>
                 <a href="#contact" class="cta-link">Let's Talk <i data-lucide="message-circle"></i></a>
-
+                
                 <div class="stats-box">
-                    <div class="stat-item">
-                        <h3>4</h3>
-                        <p>Programming Language</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>6</h3>
-                        <p>Development Tools</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>8</h3>
-                        <p>Years of Experience</p>
-                    </div>
+                    <div class="stat-item"><h3>4</h3><p>Languages</p></div>
+                    <div class="stat-item"><h3>6</h3><p>Tools</p></div>
+                    <div class="stat-item"><h3>8</h3><p>Years</p></div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -112,8 +82,7 @@
                 <div class="about-card">
                     <div class="quote-mark">“</div>
                     <h4 class="hello-text">Hello!</h4>
-                    <p>My name is Sinan and I specialize in web development that utilizes <span class="highlight">HTML, CSS, JS</span> and <span class="highlight">REACT</span> etc.</p>
-                    <p>I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works.</p>
+                    <p>My name is Sinan and I specialize in web development that utilizes <span class="highlight">HTML, CSS, JS</span> and <span class="highlight">REACT</span>.</p>
                     <p>When I'm not coding, I am <span class="highlight">writing blogs</span>, reading, or picking up some new hands-on art project.</p>
                 </div>
             </div>
@@ -129,38 +98,92 @@
                 <div class="bg-number">0</div>
                 <div class="bg-symbol">&lt;/&gt;</div>
                 <h2 class="title">Skills</h2>
-                <p class="sub-text">I am striving to never stop learning and improving</p>
             </div>
-
             <div class="skill-categories">
-                <div class="cat-box active">
-                    <i data-lucide="monitor"></i>
-                    Web Development <br> <small>HTML · CSS · JS · REACT</small>
-                </div>
-                <div class="cat-box faded">
-                    <i data-lucide="smartphone"></i>
-                    App Development <br> <small>iOS · Android</small>
-                </div>
+                <div class="cat-box active"><i data-lucide="monitor"></i> Web Dev</div>
+                <div class="cat-box faded"><i data-lucide="smartphone"></i> App Dev</div>
             </div>
-
             <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="circle html"><i class="fa-brands fa-html5"></i></div>
-                    <span>HTML</span>
+                <div class="skill-item"><div class="circle html"><i class="fa-brands fa-html5"></i></div><span>HTML</span></div>
+                <div class="skill-item"><div class="circle css"><i class="fa-brands fa-css3-alt"></i></div><span>CSS</span></div>
+                <div class="skill-item"><div class="circle js"><i class="fa-brands fa-js"></i></div><span>JS</span></div>
+                <div class="skill-item"><div class="circle react"><i class="fa-brands fa-react"></i></div><span>REACT</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="section text-center">
+        <div class="container">
+            <div class="section-header">
+                <div class="bg-number">0</div>
+                <h2 class="title">Works</h2>
+                <p class="sub-text">I had the pleasure of working with these awesome projects</p>
+            </div>
+            <div class="works-wrapper">
+                <button class="nav-btn"><i data-lucide="chevron-left"></i></button>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?fit=crop&w=800" alt="Project">
+                    <div class="project-overlay">
+                        <h3>E-Commerce App</h3>
+                        <a href="#">View Project <i data-lucide="external-link"></i></a>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="circle css"><i class="fa-brands fa-css3-alt"></i></div>
-                    <span>CSS</span>
+                <button class="nav-btn"><i data-lucide="chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="section">
+        <div class="container blog-container">
+            <div class="section-header text-center">
+                <div class="bg-number">0</div>
+                <h2 class="title">Blogs</h2>
+                <button class="btn-small">Subscribe</button>
+            </div>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=200" alt="Blog">
+                    <div class="blog-info">
+                        <h3>What does it take to become a web developer?</h3>
+                        <p>Web development encompasses a variety of tasks...</p>
+                        <div class="meta"><span>Web Dev</span> • <span>12 Oct 2023</span> <span class="read">Read >></span></div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="circle js"><i class="fa-brands fa-js"></i></div>
-                    <span>JS</span>
-                </div>
-                <div class="skill-item">
-                    <div class="circle react"><i class="fa-brands fa-react"></i></div>
-                    <span>REACT</span>
+                <div class="blog-item">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=200" alt="Blog">
+                    <div class="blog-info">
+                        <h3>Why React is styling the web?</h3>
+                        <p>React makes it painless to create interactive UIs...</p>
+                        <div class="meta"><span>React</span> • <span>15 Nov 2023</span> <span class="read">Read >></span></div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container text-center">
+            <div class="section-header">
+                <div class="bg-number">0</div>
+                <h2 class="title">Contact</h2>
+                <p class="sub-text">Send me a message</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <input type="text" placeholder="Message" class="msg-box">
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+            <footer class="main-footer">
+                <div class="footer-icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <p>© 2026 SinanTokmak. All rights reserved.</p>
+            </footer>
         </div>
     </section>
 
