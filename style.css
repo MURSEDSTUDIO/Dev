@@ -25,15 +25,23 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.logo h2 {
-  font-size: 20px;
-  font-weight: 600;
+/* Logo Styling - Responsive */
+.logo {
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
-.logo h2:hover {
-  color: #c7f000;
+.logo-img {
+  height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(199, 240, 0, 0));
+}
+
+.logo:hover .logo-img {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 4px 12px rgba(199, 240, 0, 0.3));
 }
 
 /* Hamburger menu (hidden on desktop) */
@@ -838,6 +846,11 @@ footer p:hover {
     padding: 20px 40px;
   }
 
+  /* Logo size for tablet */
+  .logo-img {
+    height: 45px;
+  }
+
   #home {
     padding: 60px 40px;
     gap: 50px;
@@ -881,6 +894,11 @@ footer p:hover {
 @media (max-width: 768px) {
   header {
     padding: 20px 30px;
+  }
+
+  /* Logo size for mobile */
+  .logo-img {
+    height: 40px;
   }
 
   /* Show hamburger menu */
@@ -1146,6 +1164,11 @@ footer p:hover {
 
 /* Extra small mobile (max 480px) */
 @media (max-width: 480px) {
+  /* Logo size for extra small screens */
+  .logo-img {
+    height: 35px;
+  }
+
   .hero-left h1 {
     font-size: 32px;
   }
@@ -1187,4 +1210,3 @@ footer p:hover {
     font-size: 35px;
   }
   }
-    
