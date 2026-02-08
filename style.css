@@ -488,7 +488,7 @@ nav ul li a:hover::after {
 
 .capability-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -545,6 +545,20 @@ nav ul li a:hover::after {
 
 .capability-item:hover span {
   color: #c7f000;
+}
+
+/* Font Awesome Excel Icon Styling */
+.capability-item .fa-file-excel {
+  font-size: 50px;
+  color: #c7f000;
+}
+
+.capability-item:hover .fa-file-excel {
+  color: #c7f000;
+}
+
+.capability-icon .fa-file-excel {
+  transition: all 0.4s ease;
 }
 
 /* ================= EXPERIENCE SECTION ================= */
@@ -846,7 +860,6 @@ footer p:hover {
     padding: 20px 40px;
   }
 
-  /* Logo size for tablet */
   .logo-img {
     height: 60px;
   }
@@ -885,7 +898,7 @@ footer p:hover {
   }
 
   .capability-grid {
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 }
@@ -896,17 +909,14 @@ footer p:hover {
     padding: 20px 30px;
   }
 
-  /* Logo size for mobile */
   .logo-img {
     height: 55px;
   }
 
-  /* Show hamburger menu */
   .hamburger {
     display: flex;
   }
 
-  /* Hide nav by default */
   nav {
     position: fixed;
     top: 0;
@@ -933,7 +943,6 @@ footer p:hover {
     font-size: 18px;
   }
 
-  /* Hero section */
   #home {
     padding: 40px 30px 60px;
     flex-direction: column;
@@ -963,7 +972,6 @@ footer p:hover {
     height: 400px;
   }
 
-  /* Projects */
   #projects {
     padding: 60px 30px;
   }
@@ -1008,7 +1016,6 @@ footer p:hover {
     flex-wrap: wrap;
   }
 
-  /* About */
   #about {
     padding: 60px 30px;
   }
@@ -1045,7 +1052,7 @@ footer p:hover {
   }
 
   .capability-grid {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
 
@@ -1068,7 +1075,6 @@ footer p:hover {
     font-size: 12px;
   }
 
-  /* Experience */
   #experience {
     padding: 60px 30px;
   }
@@ -1103,7 +1109,6 @@ footer p:hover {
     font-size: 14px;
   }
 
-  /* Contact */
   #contact {
     padding: 60px 30px;
   }
@@ -1152,7 +1157,6 @@ footer p:hover {
     width: 100%;
   }
 
-  /* Footer */
   footer {
     padding: 30px 30px;
   }
@@ -1164,7 +1168,6 @@ footer p:hover {
 
 /* Extra small mobile (max 480px) */
 @media (max-width: 480px) {
-  /* Logo size for extra small screens */
   .logo-img {
     height: 45px;
   }
@@ -1196,7 +1199,7 @@ footer p:hover {
   }
 
   .capability-grid {
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
   }
 
@@ -1209,4 +1212,4 @@ footer p:hover {
     height: 35px;
     font-size: 35px;
   }
-  }
+}
