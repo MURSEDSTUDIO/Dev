@@ -33,7 +33,7 @@ header {
 }
 
 .logo-img {
-  height: 50px;
+  height: 70px;
   width: auto;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 8px rgba(199, 240, 0, 0));
@@ -848,7 +848,7 @@ footer p:hover {
 
   /* Logo size for tablet */
   .logo-img {
-    height: 45px;
+    height: 60px;
   }
 
   #home {
@@ -898,7 +898,7 @@ footer p:hover {
 
   /* Logo size for mobile */
   .logo-img {
-    height: 40px;
+    height: 55px;
   }
 
   /* Show hamburger menu */
@@ -1166,7 +1166,7 @@ footer p:hover {
 @media (max-width: 480px) {
   /* Logo size for extra small screens */
   .logo-img {
-    height: 35px;
+    height: 45px;
   }
 
   .hero-left h1 {
