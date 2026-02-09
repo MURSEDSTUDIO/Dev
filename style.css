@@ -1,9 +1,14 @@
+
 /* ================= GLOBAL STYLES ================= */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,9 +25,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+header.scrolled {
+  padding: 15px 60px;
+  background-color: rgba(0, 0, 0, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo Styling - Responsive */
@@ -37,6 +53,10 @@ header {
   width: auto;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 8px rgba(199, 240, 0, 0));
+}
+
+header.scrolled .logo-img {
+  height: 60px;
 }
 
 .logo:hover .logo-img {
@@ -108,12 +128,23 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* Active nav link with glow */
+nav ul li a.active {
+  color: #c7f000;
+  text-shadow: 0 0 10px rgba(199, 240, 0, 0.5);
+}
+
+nav ul li a.active::after {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(199, 240, 0, 0.6);
+}
+
 /* ================= HERO SECTION ================= */
 
 #home {
   width: 100%;
   min-height: 90vh;
-  padding: 0 60px 80px;
+  padding: 120px 60px 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -860,12 +891,16 @@ footer p:hover {
     padding: 20px 40px;
   }
 
+  header.scrolled {
+    padding: 15px 40px;
+  }
+
   .logo-img {
     height: 60px;
   }
 
   #home {
-    padding: 60px 40px;
+    padding: 100px 40px 60px;
     gap: 50px;
   }
 
@@ -909,8 +944,16 @@ footer p:hover {
     padding: 20px 30px;
   }
 
+  header.scrolled {
+    padding: 15px 30px;
+  }
+
   .logo-img {
     height: 55px;
+  }
+
+  header.scrolled .logo-img {
+    height: 50px;
   }
 
   .hamburger {
@@ -944,7 +987,7 @@ footer p:hover {
   }
 
   #home {
-    padding: 40px 30px 60px;
+    padding: 100px 30px 40px;
     flex-direction: column;
     gap: 40px;
     min-height: auto;
@@ -1172,6 +1215,10 @@ footer p:hover {
     height: 45px;
   }
 
+  header.scrolled .logo-img {
+    height: 42px;
+  }
+
   .hero-left h1 {
     font-size: 32px;
   }
@@ -1212,4 +1259,4 @@ footer p:hover {
     height: 35px;
     font-size: 35px;
   }
-}
+                                      }
