@@ -16,7 +16,7 @@
 <body>
 
   <!-- ================= HEADER / NAVBAR ================= -->
-  <header>
+  <header id="navbar">
     <div class="logo">
       <img src="Logo.jpg" alt="LOGO" class="logo-img">
     </div>
@@ -30,9 +30,9 @@
 
     <nav>
       <ul>
-        <li><a href="#home">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link">Work</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -358,15 +358,16 @@
       <div class="experience-item">
         <div class="experience-header">
           <h3>Front-end Developer</h3>
-          <span>2023 – Present</span>
+          <span>2025 – Present</span>
         </div>
 
         <p class="experience-company">Freelance</p>
 
         <p class="experience-desc">
-          Working with clients to build responsive, accessible, and
-          performance-focused websites. Translating designs into clean
-          and maintainable code.
+          Built responsive web interfaces using HTML, CSS, and JavaScript.
+          
+         Developed dashboards and tracking systems usingMicrosoft Excel.
+         Created business websites and e-commerce product pages with clean UI and structured layouts.
         </p>
       </div>
 
@@ -374,14 +375,38 @@
       <div class="experience-item">
         <div class="experience-header">
           <h3>Front-end Intern</h3>
-          <span>2022 – 2023</span>
+          <span>2024 – 2025</span>
         </div>
 
         <p class="experience-company">Startup / Agency</p>
 
         <p class="experience-desc">
-          Assisted in developing UI components, fixing layout issues,
-          and improving overall user experience across multiple projects.
+          Assisted in developing UI components and fixing layout issues.
+         Worked on responsive pages and basic user interface improvements.
+         Projects shown above are self-built and created for learning and skill demonstration.
+        </p>
+      </div>
+  
+        <!-- Experience 3 -->
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Excel Dashboard & Reporting Specialist</h3>
+          <span>2025 - Present</span>
+        </div>
+        <p class="experience-company">Startup / Agency</p>
+
+        <p class="experience-desc">
+          Designed advanced Excel dashboards using
+          complex formulas, Pivot Tables (Data
+          summarization tool), and dynamic charts.
+          Built automated sales and expense tracking
+          systems with clean structure and error-free
+          data flow.
+          
+          Used advanced Excel functions for data analysis,
+          reporting, and business decision support.
+          Focused on accuracy, clarity, and professiona
+          l-level reporting used in real-world scenario.
         </p>
       </div>
     </div>
@@ -394,7 +419,7 @@
         <h1>LET'S CONNECT</h1>
         
         <div class="contact-info">
-          <p>Say hello at <a href="mailto:robertgarcia@gmail.com">robertgarcia@gmail.com</a></p>
+          <p>Say hello at <a href="mailto:Mursedalam526@gmail.com">Mursedalam526@gmail.com</a></p>
         </div>
         
         <p class="resume-link">For more info, here's my <a href="#">resume</a></p>
@@ -457,46 +482,7 @@
   </footer>
 
   <!-- ================= JavaScript ================= -->
-  <script>
-    // Hamburger menu toggle
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("nav");
-
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      nav.classList.toggle("active");
-    });
-
-    // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll("nav ul li a");
-    navLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        nav.classList.remove("active");
-      });
-    });
-
-    // About section toggle
-    const aboutToggle = document.querySelector(".about-toggle");
-    const aboutWrapper = document.querySelector(".about-wrapper");
-
-    aboutToggle.addEventListener("click", () => {
-      aboutWrapper.classList.toggle("active");
-
-      if (aboutWrapper.classList.contains("active")) {
-        aboutToggle.textContent = "Show less";
-      } else {
-        aboutToggle.textContent = "More about me";
-      }
-    });
-
-    // Contact form submission
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! This is a demo form.');
-      this.reset();
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
